@@ -33,6 +33,7 @@ projectService.general().then((response) => {
     language.innerHTML = response["language"][lang_num]+":";
     rights.innerHTML = response["rights"][lang_num];
     cv_button.innerHTML = response["cv-button"][lang_num];
+    console.log(document.location.href);
     if (document.location.href.includes("index")) {
         subtitle.innerHTML = response["about-me"][lang_num].toUpperCase(); 
         const p_1 = document.querySelector("#p-1");
