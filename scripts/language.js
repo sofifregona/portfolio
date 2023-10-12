@@ -23,6 +23,7 @@ const contact_me = document.querySelector("#contact-me");
 const language = document.querySelector(".lang-title");
 const rights = document.querySelector(".rights");
 const cv_button = document.querySelector(".cv-button");
+const cv_link = document.querySelector(".cv-link");
 
 const subtitle = document.querySelector(".subtitle");
 
@@ -41,6 +42,7 @@ projectService.general().then((response) => {
         p_2.innerHTML = response["about-me-text"][lang_num][1];
         p_3.innerHTML = response["about-me-text"][lang_num][2];
         cv_button.innerHTML = response["cv-button"][lang_num];
+        cv_link.innerHTML = response["cv-link"][lang_num];
     } else if (document.location.href.includes("mywork")) subtitle.innerHTML = response["my-work"][lang_num].toUpperCase();
     else subtitle.innerHTML = response["contact-me"][lang_num].toUpperCase();
 })
