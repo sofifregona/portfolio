@@ -32,11 +32,6 @@ projectService.general().then((response) => {
     contact_me.innerHTML = response["contact-me"][lang_num];
     language.innerHTML = response["language"][lang_num]+":";
     rights.innerHTML = response["rights"][lang_num];
-<<<<<<< HEAD
-=======
-    cv_button.innerHTML = response["cv-button"][lang_num];
-    console.log(document.location.href);
->>>>>>> 69e5c4bdfd6a5478b5bfd3ab46a071c3b1ae08e6
     if (document.location.href.includes("index")) {
         subtitle.innerHTML = response["about-me"][lang_num].toUpperCase(); 
         const p_1 = document.querySelector("#p-1");
