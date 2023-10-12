@@ -1,0 +1,42 @@
+.contact-info, .contact-form {
+    width: 25%;
+}
+
+.subtitle {
+    margin-top: 2%;
+    padding-bottom: 0%;
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.main-content {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+    height: 67vh;
+}
+
+.contact-info p {
+    line-height: 2rem;
+    font-family: 'Montserrat';
+    letter-spacing: 0.05rem;
+}
+
+.contact-info p b {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}

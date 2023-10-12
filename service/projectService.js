@@ -1,7 +1,8 @@
 const projectList = async () => {
   try {
     const response = await fetch(
-      "https://sofifregona.github.io/portfolio/db.json"
+      /*"https://sofifregona.github.io/portfolio/db.json"*/
+      "../db.json"
     );
     const data = await response.json();
     return data.projects
@@ -10,15 +11,14 @@ const projectList = async () => {
   }
 };
 
-const projectDetail = async (id) => {
+const general = async () => {
   try {
     const response = await fetch(
-      "https://sofifregona.github.io/portfolio/db.json"
+      /*"https://sofifregona.github.io/portfolio/db.json"*/
+      "../db.json"
     );
     const data = await response.json();
-    const projectFound = data.projects.find(project => project.id === id);
-    console.log(projectFound)
-    return projectFound
+    return data.general
   } catch (error) {
     return console.log(error);
   }
@@ -26,5 +26,5 @@ const projectDetail = async (id) => {
 
 export const projectService = {
   projectList,
-  projectDetail
+  general
 }

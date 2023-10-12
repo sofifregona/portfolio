@@ -6,10 +6,11 @@
     <title>María Sofía Fregona</title>
     <link href="assets/css/reset.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/mywork.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,10 +22,10 @@
         <nav class="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link active" id="about-me" href="index.html?lang="></a>
+              <a class="nav-link" id="about-me" href="index.html?lang="></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="my-work" href="mywork.html?lang="></a>
+              <a class="nav-link active" id="my-work" href="mywork.html?lang="></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="contact-me" href="contact.html?lang="></a>
@@ -36,18 +37,10 @@
 
     <main>
       <div class="main-content">
-        <div class="photo-content">
-          <img src="assets/img/photo.jpg" class="photo"></img>
-        </div>
-        <div class="text-content">
-          <h2 class="subtitle" id="about-me-subtitle"></h2>
-          <p class="text" id="p-1"></p>
-          <p class="text" id="p-2"></p>
-          <p class="text" id="p-3"></p>
-          <div class="button-div">
-            <a class="cv-link"><button class="cv-button"></button></a>
-          </div>
-        </div>
+        <h2 class="subtitle" id="my-work"></h2>
+        <div class="main-column" id="column-1"></div>
+        <div class="main-column" id="column-2"></div>
+        <div class="main-column" id="column-3"></div>
       </div>
     </main>
 
@@ -55,9 +48,9 @@
       <div class="language">
         <p class="lang-title"></p>
         <ul>
-          <li class="lang-item"><a href="index.html?lang=en" class="lang-link">English</a></li>
-          <li class="lang-item"><a href="index.html?lang=es" class="lang-link">Español</a></li>
-          <li class="lang-item"><a href="index.html?lang=it" class="lang-link">Italiano</a></li>
+          <li class="lang-item"><a href="mywork.html?lang=en" class="lang-link">English</a></li>
+          <li class="lang-item"><a href="mywork.html?lang=es" class="lang-link">Español</a></li>
+          <li class="lang-item"><a href="mywork.html?lang=it" class="lang-link">Italiano</a></li>
         </ul>
       </div>
       <div class="rights"></div>
@@ -70,5 +63,6 @@
       </div>
     </footer>
     <script type="module" src="scripts/language.js"></script>
+    <script type="module" src="scripts/loadProjects.js"></script>
   </body>
 </html>
