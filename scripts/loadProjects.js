@@ -41,7 +41,7 @@ const createProject = (project, lang) => {
   line.id = project.id
   line.classList.add("project");
   const content = `
-    <img class="project-photo" id="img${project.id}" src="../assets/img/${project.photo}"></img>
+    <img class="project-photo" id="img${project.id}" src="https://sofifregona.github.io/portfolio/assets/img/${project.photo}"></img>
     <div class="project-info" id="project${project.id}">
       <p class="project-subtitle">${project.subtitle[lang]}</p>  
       <p class="project-title">${project.title}</p>
