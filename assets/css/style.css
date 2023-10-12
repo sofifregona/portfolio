@@ -85,7 +85,7 @@ body {
 }
 
 .photo {
-  height: 380px;
+  height: 350px;
 }
 
 .subtitle {
@@ -99,7 +99,7 @@ body {
 
 .text {
   font-size: 0.8rem;
-  line-height: 1.5rem;
+  line-height: 1.35rem;
   text-align: justify;
   margin: 1% 0%;
 }
