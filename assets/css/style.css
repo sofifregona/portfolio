@@ -98,8 +98,8 @@ body {
 }
 
 .text {
-  font-size: 0.9rem;
-  line-height: 1.75rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
   text-align: justify;
   margin: 1% 0%;
 }
@@ -160,7 +160,6 @@ footer {
 .lang-item {
   padding: 0% 0% 20% 50%;
   text-align: right;
-  font-size: .8rem;
 }
 
 .lang-item:last-child {
@@ -171,7 +170,7 @@ footer {
 .lang-link:visited {
   text-decoration: none;
   color: #f5f5dc;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .lang-link:hover {
