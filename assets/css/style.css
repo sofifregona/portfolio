@@ -19,7 +19,7 @@ body {
 
 .title-text {
   font-family: "DM Serif Display";
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .nav-menu {
@@ -40,6 +40,7 @@ body {
 }
 
 .nav-link {
+  font-size: .9rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -84,7 +85,7 @@ body {
 }
 
 .photo {
-  height: 400px;
+  height: 380px;
 }
 
 .subtitle {
@@ -92,7 +93,7 @@ body {
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 3%;
 }
 
@@ -237,11 +238,13 @@ footer {
   .language p {
     text-align: center;
     padding-bottom: 5%;
+    font-size: .8rem;
   }
 
   .lang-item {
     padding: 5%;
     text-align: center;
+    font-size: .8rem;
   }
 
   .lang-item:last-child {
@@ -264,5 +267,6 @@ footer {
 
   .cv-button {
     padding: 2%;
+    font-size: .8rem;
   }
 }
