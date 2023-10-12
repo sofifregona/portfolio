@@ -28,9 +28,9 @@ const cv_link = document.querySelector(".cv-link");
 const subtitle = document.querySelector(".subtitle");
 
 projectService.general().then((response) => {
-    about_me.innerHTML = response["about-me"][lang_num];
-    my_work.innerHTML = response["my-work"][lang_num];
-    contact_me.innerHTML = response["contact-me"][lang_num];
+    about_me.innerHTML = response["about-me"][lang_num].toUpperCase();
+    my_work.innerHTML = response["my-work"][lang_num].toUpperCase();
+    contact_me.innerHTML = response["contact-me"][lang_num].toUpperCase();
     language.innerHTML = response["language"][lang_num]+":";
     rights.innerHTML = response["rights"][lang_num];
     if (document.location.href.includes("index")) {
@@ -42,7 +42,7 @@ projectService.general().then((response) => {
         p_2.innerHTML = response["about-me-text"][lang_num][1];
         p_3.innerHTML = response["about-me-text"][lang_num][2];
         cv_button.innerHTML = response["cv-button"][lang_num];
-        cv_link.innerHTML = response["cv-link"][lang_num];
+        cv_link.href = response["cv-link"][lang_num];
     } else if (document.location.href.includes("mywork")) subtitle.innerHTML = response["my-work"][lang_num].toUpperCase();
     else subtitle.innerHTML = response["contact-me"][lang_num].toUpperCase();
 })
