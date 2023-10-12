@@ -1,0 +1,230 @@
+{
+  "projects": [
+    {
+      "id": "001",
+      "title": "Sales Manager",
+      "subtitle": [
+        "Proyecto final de carrera",
+        "Final Career Project",
+        "Progetto Finale di Carriera"
+      ],
+      "photo": "image_1.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Análisis, diseño y desarrollo de un prototipo funcional de un sistema de gestión de ventas para su posterior testeo e implementación.",
+        "Analysis, design, and development of a functional prototype for a Sales Management System for subsequent testing and implementation.",
+        "Analisi, progettazione e sviluppo di un prototipo funzionale di un sistema di gestione delle vendite per successivi test e implementazione."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "JPA",
+        "Hibernate",
+        "Javax",
+        "Javascript",
+        "CSS",
+        "HTML",
+        "Thymeleaf",
+        "MySQL"
+      ],
+      "repo": "https://github.com/sofifregona/sales_manager",
+      "website": ""
+    },
+    {
+      "id": "002",
+      "title": "Sofia - tienda de ropa",
+      "subtitle": [
+        "Proyecto académico",
+        "Academic Project",
+        "Progetto Accademico"
+      ],
+      "photo": "image_2.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Diseño de una tienda virtual para una marca de ropa para mujeres.",
+        "Design of an online store for a women's clothing brand",
+        "Progettazione di un negozio virtuale per un marchio di abbigliamento femminile"
+      ],
+      "technologies": ["Javascript", "CSS", "Bootstrap", "HTML", "JSON"],
+      "repo": "https://github.com/sofifregona/Sofia-tienda-de-ropa",
+      "website": "https://sofifregona.github.io/Sofia-tienda-de-ropa/"
+    },
+    {
+      "id": "003",
+      "title": "Superstore - modelo predictivo",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_3.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Modelo predictivo para segmentación de clientes para una camapaña de marketing.",
+        "Predictive Model for Customer Segmentation for a Marketing Campaign.",
+        "Modello predittivo per la segmentazione dei clienti per una campagna di marketing."
+      ],
+      "technologies": [
+        "Python",
+        "Numpy",
+        "Pandas",
+        "Matplotlib",
+        "Scikit learn",
+        "Seaborn"
+      ],
+      "repo": "https://github.com/sofifregona/marketing_modelo_predictivo",
+      "website": ""
+    },
+    {
+      "id": "004",
+      "title": "La felicidad en el mundo",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_4.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Análisis de datos de indicadores que miden la felicidad alrededor del mundo.",
+        "Analysis of indicator's data about the World Happiness.",
+        "Analisi dei dati sugli indicatori di felicità nel mondo."
+      ],
+      "technologies": ["Tableau", "MySQL"],
+      "repo": "",
+      "website": "https://public.tableau.com/app/profile/mar.a.sof.a.fregona/viz/Lafelicidadenelmundo/Primerpgina"
+    },
+    {
+      "id": "005",
+      "title": "E-commerce Alura Geek",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_5.jpg",
+      "status": ["En mantenimiento", "Under maintenance", "In manutenzione"],
+      "description": [
+        "Diseño de una tienda virtual de artículos geek.",
+        "Design of a Virtual Store for Geek Merchandise.",
+        "Progettazione di un Negozio Virtuale per Prodotti Geek."
+      ],
+      "technologies": ["Javascript", "HTML", "CSS", "JSON"],
+      "repo": "https://github.com/sofifregona/ecommerce_alura_geek",
+      "website": "https://sofifregona.github.io/ecommerce_alura_geek/screens/"
+    },
+    {
+      "id": "006",
+      "title": "El Vigia",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_6.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Diseño de página web para un hostel.",
+        "Website Design for a Hostel.",
+        "Progettazione del sito web per un ostello."
+      ],
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "repo": "https://github.com/sofifregona/ElVigia",
+      "website": "https://sofifregona.github.io/ElVigia/"
+    },
+    {
+      "id": "007",
+      "title": "Diferencias salariales",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_7.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Análisis de la brecha salarial dentro de una empresa.",
+        "Analysis of the gender pay gap within a Company.",
+        "Analisi della disparità salariale di genere all'interno di un'azienda."
+      ],
+      "technologies": ["Python", "Numpy", "Pandas"],
+      "repo": "https://github.com/sofifregona/Diferencias_salariales",
+      "website": ""
+    },
+    {
+      "id": "008",
+      "title": "Ecobicis en la ciudad de Buenos Aires",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_8.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Análisis exploratorio para la obtención de información de interés sobre el uso de Ecobicis en la ciudad de Buenos Aires.",
+        "Exploratory analysis to gather relevant information on Ecobici usage in the City of Buenos Aires.",
+        "Analisi esplorativa per raccogliere informazioni rilevanti sull'uso delle Ecobici nella città di Buenos Aires."
+      ],
+      "technologies": ["R", "Tidyverse"],
+      "repo": "https://github.com/sofifregona/Practica_integradora_r",
+      "website": ""
+    },
+    {
+      "id": "009",
+      "title": "Práctica integradora DESI",
+      "subtitle": [
+        "Proyecto académico",
+        "Academic Project",
+        "Progetto Accademico"
+      ],
+      "photo": "non_avaible.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Desarrollo de un sistema de alertas meteorológicas.",
+        "Exploratory analysis to gather relevant information on Ecobici usage in the City of Buenos Aires.",
+        "Analisi esplorativa per raccogliere informazioni rilevanti sull'uso delle Ecobici nella città di Buenos Aires."
+      ],
+      "technologies": [
+        "Java",
+        "Jakarta",
+        "Hibernate",
+        "JPA",
+        "Spring Boot",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Thymeleaf",
+        "MySQL"
+      ],
+      "repo": "https://github.com/sofifregona/desi_2022",
+      "website": ""
+    },
+    {
+      "id": "010",
+      "title": "Juego del ahorcado",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_10.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Clásico juego del ahorcado realizado en el que debes adivinar la palabra.",
+        "Classic hangman game where you have to guess the word.",
+        "Gioco classico dell'impiccato in cui devi indovinare la parola."
+      ],
+      "technologies": ["Javascript", "CSS", "HTML", "Canvas"],
+      "repo": "https://github.com/sofifregona/JuegoDelAhorcado",
+      "website": "https://sofifregona.github.io/JuegoDelAhorcado/"
+    },
+    {
+      "id": "011",
+      "title": "Criptex",
+      "subtitle": ["Proyecto de curso", "Course Project", "Progetto di Corso"],
+      "photo": "image_11.jpg",
+      "status": ["Finalizado", "Finished", "Finito"],
+      "description": [
+        "Encriptador y desencriptador de mensajes.",
+        "Message Encryptor and Decryptor.",
+        "Criptatore e Decrittatore di Messaggi."
+      ],
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "repo": "https://github.com/sofifregona/Criptex-Oracle-ONE",
+      "website": "https://sofifregona.github.io/Criptex-Oracle-ONE/"
+    }
+  ],
+  "general": {
+    "language": ["Lenguaje", "Language", "Lingua"],
+    "about-me": ["Sobre mí", "About me", "Su di me"],
+    "my-work": ["Mis proyectos", "My projects", "I miei progetti"],
+    "contact-me": ["Contáctame", "Contact me", "Contattami"],
+    "rights": ["2023. Todos los derechos reservados.", "2023. All rights reserved.", "2023. Tutti i diritti riservati."],
+    "about-me-text": [
+      ["Comencé mi camino en el mundo de las IT como desarrollador Front-end, pero pronto me percaté de que quería profundizar mis conocimientos, por lo que estudié y me gradué como Técnica Universitario en Tecnologías de la Información. Además, estoy estudiando Análisis Industrial.",
+      "Gracias a mis estudios, he adquirido mucha experiencia como desarrollador Java y buenas habilidades en el análisis, diseño y desarrollo de sistemas, con o sin metodologías ágiles. También tengo buenos conocimientos en análisis estadístico, desarrollo de indicadores y modelado matemático.",
+      "En cuanto a mis habilidades blandas, me considero una persona empática, autodidacta y de aprendizaje rápido. Tengo capacidad para adaptarme a los cambios y trabajar bajo presión. Me gustan los desafíos porque representan oportunidades de aprendizaje y crecimiento."],
+      ["I started my path in the IT world as a Front-end developer, but soon I realized that I wanted to deepen my knowledge, so I studied and graduated as an University Technician in Information Technologies. I'm also studying Industrial Analysis.",
+      "Due to my educational background, I have gained valuable experience as a Java developer and good skills in system analysis, design, and development, with or without agile methodologies. I also have good knowledge in statistical analysis, indicator development, and mathematical modeling.",
+      "Regarding my soft skills, I consider myself an empathetic, self-learner, and fast learner. I adapt well to changes and work well under pressure. I love challenges because they represent opportunities for learning and growth."],
+      ["Ho iniziato il mio percorso nel mondo dell'informatica come sviluppatrice Front-end, ma presto ho capito che volevo approfondire le mie conoscenze, così ho studiato e mi sono laureato come Tecnica Universitaria in Tecnologie dell'Informazione. Sto anche studiando Analisi Industriale.",
+      "Grazie al mio background educativo, ho acquisito preziose esperienze come sviluppatrice Java e buone competenze nell'analisi, progettazione e sviluppo di sistemi, con o senza metodologie agili. Ho anche buone conoscenze nell'analisi statistica, nello sviluppo di indicatori e nella modellazione matematica.",
+      "Per quanto riguarda le mie qualità personali, mi considero una persona empatica, autodidatta e veloce nell'apprendimento. Mi adatto bene ai cambiamenti e lavoro bene sotto pressione. Mi piacciono le sfide perché rappresentano opportunità di apprendimento e crescita."]
+    ],
+    "cv-link": ["", "", ""],
+    "cv-button": ["Descargar CV", "Download CV", "Scarica CV"]
+  }
+}
