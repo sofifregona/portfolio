@@ -62,7 +62,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 3vh;
-  height: 75vh;
+  height: 74vh;
 }
 
 .photo-content,
@@ -132,7 +132,7 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 1vh 5%;
+  padding: 2vh 5%;
   align-items: center;
   font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -145,8 +145,12 @@ footer {
   flex-wrap: nowrap;
 }
 
+.lang-title {
+  font-size: .8rem;
+}
+
 .social-media-logo {
-  width: 40px;
+  width: 35px;
 }
 
 .lang-title {
@@ -156,6 +160,7 @@ footer {
 .lang-item {
   padding: 0% 0% 20% 50%;
   text-align: right;
+  font-size: .8rem;
 }
 
 .lang-item:last-child {
@@ -171,6 +176,10 @@ footer {
 
 .lang-link:hover {
   color: #ffffff;
+}
+
+.rights {
+  font-size: .8rem;
 }
 
 @media screen and (max-width: 800px) {

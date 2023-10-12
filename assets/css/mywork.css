@@ -60,21 +60,21 @@
 
 .project-title {
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2%;
 }
 
 .project-subtitle {
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
-    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
     color: rgba(0,0,0, 0.4);
     margin-bottom: 2%;
 }
 
 .project-description {
-    font-size: .95rem;
+    font-size: .8rem;
     font-weight: 500;
     margin: 3% 10%;
     color: rgba(0,0,0, 0.5);
@@ -96,7 +96,7 @@
     width: 20%;
     border-radius: 5px;
     transition: all 250ms ease-in;
-    font-size: .9rem;
+    font-size: .8rem;
     letter-spacing: 0.1rem;
     font-family: 'Montserrat';
 }
