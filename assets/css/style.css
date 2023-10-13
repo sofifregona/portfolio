@@ -191,6 +191,10 @@ footer {
     text-align: center;
   }
 
+  .header {
+    height: auto;
+  }
+
   .title {
     width: 100%;
   }
@@ -224,6 +228,10 @@ footer {
   .photo-content img {
     width: 60%;
     height: auto;
+  }
+
+  .subtitle {
+    padding-top: 5vh;
   }
 
   .text-content {

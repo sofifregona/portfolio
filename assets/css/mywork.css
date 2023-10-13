@@ -115,4 +115,52 @@
     #column-3 {
         display: none;
     }
+
+    .project-info {
+        opacity: 100%;
+        position: absolute;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5%;
+        transition: none;
+    }
+
+    .project-repo {
+        width: 35%
+    }
+
+    .project-title {
+        order: 1;
+    }
+
+    .project-subtitle {
+        order: 2;
+    }
+
+    .project-description {
+        order: 3;
+        font-size: .7rem;
+        margin: 1% 0% 8% 0%;
+    }
+
+    .project-buttons {
+        order: 4;
+    }
+
 }
+
+@media screen and (max-width: 600px) {
+
+    #column-1 {
+        width: 70%;
+    }
+
+    #column-2 {
+      display: none;
+    }
+  }
