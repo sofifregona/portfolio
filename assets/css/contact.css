@@ -29,6 +29,10 @@
 
 @media screen and (max-width: 800px) {
 
+    .main-content {
+        height: auto;
+    }
+
     .contact-info {
         width: 100%;
         text-align: center;
