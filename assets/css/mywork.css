@@ -116,9 +116,13 @@
         display: none;
     }
 
+    .project {
+        position: static;
+    }
+
     .project-info {
         opacity: 100%;
-        position: absolute;
+        position: static;
         width: auto;
         height: auto;
         display: flex;
