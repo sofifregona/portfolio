@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(245, 245, 220);
+  background-color: #f7f6f2;
   color: rgba(0, 0, 0, 0.8);
   font-family: "Montserrat";
 }
@@ -111,7 +111,7 @@ body {
 
 .cv-button {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #f5f5dc;
+  color: #f7f6f2;
   border: 0;
   padding: 1% 1.5%;
   width: auto;
@@ -136,7 +136,7 @@ footer {
   align-items: center;
   font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.8);
-  color: #f5f5dc;
+  color: #f7f6f2;
   height: 12vh;
 }
 
@@ -169,7 +169,7 @@ footer {
 .lang-link,
 .lang-link:visited {
   text-decoration: none;
-  color: #f5f5dc;
+  color: #f7f6f2;
   font-size: 0.8rem;
 }
 

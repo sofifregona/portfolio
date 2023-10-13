@@ -54,7 +54,7 @@
   
 .project:hover .project-info {
     opacity: 100%;
-    background-color: rgba(245, 245, 220, 0.6);
+    background-color: rgba(247, 246, 242, 0.6);
     transition: all 500ms ease-in;
 }
 
@@ -89,7 +89,7 @@
 
 .project-repo {
     background-color: rgba(0,0,0, 0.6);
-    color: #f5f5dc;
+    color: #f7f6f2;
     border: 0;
     padding: 2%;
     margin: 0% 1%;
