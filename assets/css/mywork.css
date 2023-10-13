@@ -116,6 +116,10 @@
         display: none;
     }
 
+    .subtitle {
+        padding-top: 5vh;
+      }
+
     .project {
         position: static;
     }
