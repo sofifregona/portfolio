@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sofía Fregona — IT Technician and fullstack developer specialized in React, TypeScript, Node.js."
+    />
+    <link rel="canonical" href="https://sofiafregona.com/" />
+
+    <!-- hreflang: versiones alternativas por idioma -->
+    <link rel="alternate" hreflang="en" href="https://sofiafregona.com/" />
+    <link rel="alternate" hreflang="it" href="https://sofiafregona.com/it/" />
+    <link rel="alternate" hreflang="es" href="https://sofiafregona.com/es/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://sofiafregona.com/"
+    />
+
+    <!-- SEO básico -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Sofía Fregona" />
+
+    <!-- Theme color (reacciona al modo claro/oscuro del sistema) -->
+    <meta
+      name="theme-color"
+      content="#FFFFFF"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0F0F0F"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofía Fregona · Fullstack Developer" />
+    <meta
+      property="og:site_name"
+      content="Sofía Fregona · Fullstack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Sofía Fregona — IT Technician and fullstack developer specialized in React, TypeScript, Node.js."
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Sofía Fregona — Fullstack developer"
+    />
+    <meta
+      property="og:image"
+      content="https://sofiafregona.com/assets/img/og-image.jpg"
+    />
+    <meta property="og:url" content="https://sofiafregona.com/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sofía Fregona · Fullstack Developer" />
+    <meta
+      name="twitter:description"
+      content="Sofía Fregona — IT Technician and fullstack developer specialized in React, TypeScript, Node.js."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sofiafregona.com/assets/img/og-image.jpg"
+    />
+
+    <link rel="icon" href="assets/img/icons/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/img/icons/favicon-32.png" type="image/png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <title>Sofía Fregona · Fullstack Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sofía Fregona",
+        "jobTitle": "Fullstack Developer",
+        "url": "https://sofiafregona.com/",
+        "image": "https://sofiafregona.com/assets/img/avatar.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lugano",
+          "addressRegion": "Ticino",
+          "addressCountry": "CH"
+        },
+        "knowsLanguage": ["es", "en", "it"],
+        "sameAs": [
+          "https://github.com/sofifregona",
+          "https://www.linkedin.com/in/maria-sofia-fregona/"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sofía Fregona · Fullstack Developer",
+        "url": "https://sofiafregona.com/"
+      }
+    </script>
+
+    <!-- Setea el tema ANTES de pintar, para evitar parpadeo -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,light_mode"
+    />
+  </head>
+  <body>
+    <!-- Barra de progreso scroll -->
+    <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+    <!-- ══════════════════ NAV ══════════════════ -->
+    <nav id="main-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-logo">Sofía<em>.</em></a>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+          <li>
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Change theme"
+              aria-pressed="false"
+            >
+              <span class="material-symbols-rounded icon-sun">
+                light_mode
+              </span>
+
+              <span class="material-symbols-rounded icon-moon">
+                dark_mode
+              </span>
+            </button>
+          </li>
+          <li>
+            <div class="lang-switch" aria-label="Language selector">
+              <a href="/" class="lang-active">EN</a
+              ><span aria-hidden="true">·</span><a href="/it/">IT</a
+              ><span aria-hidden="true">·</span><a href="/es/">ES</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section id="hero">
+      <div
+        class="container hero-container"
+        style="position: relative; z-index: 1"
+      >
+        <div class="hero-info">
+          <h1 class="hero-title" aria-label="Sofía Fregona">
+            <span class="hero-title-line">
+              <span class="hero-title-inner">Sofía Fregona</span>
+            </span>
+          </h1>
+          <p class="hero-tag">Fullstack Developer</p>
+
+          <div class="hero-sub-row">
+            <p class="hero-desc">
+              <strong>System analysis, design, and development</strong> — from
+              requirements gathering and data modeling to the final interface.
+              Full-stack developer with a technical background in Information
+              Technology.
+            </p>
+            <!-- <div class="hero-actions">
+              <a href="#projects" class="btn btn-amber">Ver mi trabajo</a>
+              <a href="#contact" class="btn btn-outline">Escribime</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="avatar-wrapper">
+          <div class="avatar-border">
+            <svg viewBox="0 0 200 200">
+              <circle
+                cx="100"
+                cy="100"
+                r="99.5"
+                fill="none"
+                stroke="var(--amber-hover)"
+                stroke-width="0.5"
+                class="circle-draw"
+              />
+            </svg>
+            <img
+              class="avatar-img"
+              src="assets/img/avatar.jpg"
+              alt="Sofía Fregona"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="bg-number" aria-hidden="true">01</div> -->
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span class="hero-scroll-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════ PROJECTS ══════════════════ -->
+
+    <section id="projects">
+      <div class="container">
+        <!-- <div class="bg-number" aria-hidden="true">01</div> -->
+        <div class="projects-header reveal">
+          <div>
+            <p class="section-eyebrow">Selected Work</p>
+            <h2 class="section-title">Projects <em>&amp; Case Studies</em></h2>
+          </div>
+        </div>
+
+        <div class="projects-list"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ EXPERIENCE ══════════════════ -->
+    <section id="experience">
+      <div class="container">
+        <!-- <div class="bg-number" aria-hidden="true">02</div> -->
+        <div class="exp-grid">
+          <div class="exp-sticky reveal-left">
+            <p class="section-eyebrow">Timeline</p>
+            <h2 class="section-title">Where I've <em>grown</em></h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-year">2026</div>
+              <div class="timeline-experience">
+                <p class="timeline-role">Software Development</p>
+                <p class="timeline-company">
+                  Dir. Gral. de Oftalmología, Ministerio de Salud de Santa Fe —
+                  Santa Fe, Argentina
+                </p>
+                <p class="timeline-desc">
+                  Designed and developed an eyeglass prescription management
+                  system from requirements analysis through implementation,
+                  handling sensitive patient health data in compliance with
+                  healthcare regulations.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-1">
+              <div class="timeline-year">2025</div>
+              <div class="timeline-experience">
+                <p class="timeline-role">Software Development</p>
+                <p class="timeline-company">
+                  MEGA Multiservicios S.A. — Santa Fe, Argentina
+                </p>
+                <p class="timeline-desc">
+                  Migrated the bar management system to a modern stack,
+                  redesigning the architecture from a server-rendered MVC model
+                  to a decoupled client-server system, and expanding its scope
+                  with new features and staff training.
+                </p>
+              </div>
+              <div class="timeline-year">2023</div>
+              <div class="timeline-experience">
+                <p class="timeline-role">Internship</p>
+                <!-- <p class="timeline-company">
+                  MEGA Multiservicios S.A. — Santa Fe, Argentina
+                </p> -->
+                <p class="timeline-desc">
+                  Developed a bar management system from the ground up, from
+                  requirements analysis to full-stack development with Java and
+                  Spring Boot. Final project for my university studies.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-2">
+              <div class="timeline-year">2021 —<br />2023</div>
+              <div class="timeline-experience">
+                <p class="timeline-role">
+                  Technician in Information Technology
+                </p>
+                <p class="timeline-company">
+                  Universidad Tecnológica Nacional — Santa Fe, Argentina
+                </p>
+                <p class="timeline-desc">
+                  Problem analysis and requirements definition, information
+                  systems design, implementation, and evaluation, project
+                  planning, and solution integration into the user's
+                  environment, working within interdisciplinary teams.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section id="about">
+      <div class="container">
+        <!-- <div class="bg-number" aria-hidden="true">03</div> -->
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p class="section-eyebrow">Sobre mí</p>
+            <h2 class="section-title">Me importa <em>el oficio</em></h2>
+            <br />
+            <p>
+              <strong>Desarrollador fullstack</strong> con más de 5 años
+              lanzando productos — desde el diseño de la API hasta el pixel de
+              la UI. Me gusta trabajar en cosas que sean sólidas técnicamente y
+              <em>realmente agradables de usar</em>.
+            </p>
+            <p>
+              Mi instinto frontend hace que siempre esté pensando en
+              <strong>cómo se experimenta el dato</strong>, no solo en cómo se
+              almacena. Trabajé solo y en equipo, fui dueño de features
+              completas, y llegué a decenas de miles de usuarios.
+            </p>
+            <p>
+              Actualmente abierto a <strong>roles fullstack o frontend</strong>,
+              remoto o híbrido. Siempre interesado en productos que le den
+              importancia al diseño.
+            </p>
+          </div>
+
+          <div class="skills-section reveal reveal-delay-1">
+            <p class="section-eyebrow">Skills</p>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Frontend</p>
+              <div class="skill-pills">
+                <span class="skill-pill">React</span
+                ><span class="skill-pill">Next.js</span>
+                <span class="skill-pill">TypeScript</span
+                ><span class="skill-pill">CSS3</span>
+                <span class="skill-pill">HTML5</span
+                ><span class="skill-pill">Vite</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-label">Backend</p>
+              <div class="skill-pills">
+                <span class="skill-pill">Node.js</span
+                ><span class="skill-pill">Express</span>
+                <span class="skill-pill">PostgreSQL</span
+                ><span class="skill-pill">Prisma</span>
+                <span class="skill-pill">Docker</span
+                ><span class="skill-pill">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <!-- <div class="bg-number" aria-hidden="true">04</div> -->
+        <div class="contact-inner">
+          <div class="reveal-left">
+            <p class="section-eyebrow">Hablemos</p>
+            <h2 class="contact-title">
+              ¿Tenés un proyecto<br />en <em>mente?</em>
+            </h2>
+            <p class="contact-sub">
+              Abierto a roles fullstack o frontend — remoto, híbrido, contrato o
+              permanente. Escribime y te respondo dentro de 24h.
+            </p>
+            <a href="mailto:alex@example.com" class="btn btn-amber"
+              ><svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" /></svg
+              >alex@example.com</a
+            >
+          </div>
+
+          <div class="contact-right reveal reveal-delay-1">
+            <a href="#" class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-label">GitHub</p>
+                <p class="contact-item-value">github.com/alexmoretti</p>
+              </div>
+            </a>
+
+            <a href="#" class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-label">LinkedIn</p>
+                <p class="contact-item-value">linkedin.com/in/alexmoretti</p>
+              </div>
+            </a>
+
+            <a href="#" class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-label">CV</p>
+                <p class="contact-item-value">Descargar CV (PDF)</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ FOOTER ══════════════════ -->
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2026 Sofía Fregona</p>
+        <p class="footer-stack">hecho con <em>html · css · js puro</em></p>
+      </div>
+    </footer>
+
+    <!-- <script src="assets/js/cursor.js"></script> -->
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="./assets/js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+[
+  {
+    "id": "ofaltmolens",
+    "num": "01",
+    "name": "Oftalmo LENS",
+    "subtitle": "#",
+    "year": "2026",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "React", "variant": "default" },
+        { "text": "TypeScript", "variant": "default" },
+        { "text": "Node.js", "variant": "default" },
+        { "text": "Express", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" },
+        { "text": "API Rest", "variant": "coral" }
+      ],
+      "also_used": [
+        { "text": "React Router", "variant": "default" },
+        { "text": "Prisma", "variant": "default" },
+        { "text": "SASS", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" }
+      ]
+    },
+    "description": "Eyeglass Management System. Patient and prescription registration, automatic optical transposition, eyeglass fabrication status tracking, pickup scheduling, and stock control. Dashboard with historical metrics. Role-based access control (RBAC) and sensitive data traceability.",
+    "full_description": [
+      [
+        "Overview",
+        "Eyeglass Management System for patient and prescription registration, featuring automatic optical transposition, eyeglass fabrication status tracking, frame and lens stock control, pickup scheduling for patient visits, and a dashboard with historical metrics for data analytics."
+      ],
+      [
+        "Architecture",
+        "Decoupled client-server architecture: a layered backend (Controller-Service-Repository) built with Prisma, including a dedicated mapping layer that transforms entities into DTOs before exposing them, plus cross-cutting middleware for role-based authorization and centralized error handling. On the frontend, React Router drives data fetching and mutations via loaders and actions, backed by a dedicated API layer for external calls."
+      ],
+      [
+        "Security & Compliance",
+        "Role-based authentication and authorization, following the Principle of Least Privilege, with encryption of sensitive health data and an audit trail for tracking access to patient records, in compliance with national healthcare regulations."
+      ],
+      [
+        "Development",
+        "Frontend built with React Router and TypeScript, styled with Sass and visualized with Recharts. Backend built with Express, with RESTful APIs and a PostgreSQL database designed using Prisma."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "migration_megamanager",
+    "num": "02",
+    "name": "MEGA Manager",
+    "subtitle": "Migration, refactoring, and evolutionary maintenance.",
+    "year": "2025",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "React", "variant": "default" },
+        { "text": "TypeScript", "variant": "default" },
+        { "text": "Node.js", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" },
+        { "text": "TypeORM", "variant": "coral" }
+      ],
+      "also_used": [
+        { "text": "React Router", "variant": "default" },
+        { "text": "Prisma", "variant": "default" },
+        { "text": "SASS", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" }
+      ]
+    },
+    "description": "Bar Management System. Order entry, sales and payment processing, menu management, cash register management (opening, closing, and cash movements), and dashboard with sales metrics. Role-based access control (RBAC) and audit trail for financial transactions.",
+    "full_description": [
+      [
+        "Overview",
+        "Bar Management System for order entry, sales and payment processing, and menu management. Cash register management, including opening, closing, and cash movements, along with stock control, provider management, and account records associated with each payment method. Dashboard with sales metrics, a notification system, and an alerting system for operational inconsistencies. Mobile-first responsive design, built around staff taking orders directly from their phones at the table."
+      ],
+      [
+        "Security & Traceability",
+        "Role-based access control (RBAC) authentication and authorization system, following the Principle of Least Privilege (PoLP). Audit trail for financial transactions."
+      ],
+      [
+        "Architecture",
+        "Migration from a server-side rendered MVC architecture to a decoupled client-server architecture, with a layered backend (Controller-Service-Repository pattern)."
+      ],
+      [
+        "Development",
+        "Built with a React Router and TypeScript frontend, styled with Sass and visualized with Recharts. Express backend with RESTful APIs, and a PostgreSQL database designed using TypeORM."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "megamanager",
+    "num": "03",
+    "name": "MEGA Manager",
+    "subtitle": "#",
+    "year": "2023",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "React", "variant": "default" },
+        { "text": "TypeScript", "variant": "default" },
+        { "text": "Node.js", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" },
+        { "text": "TypeORM", "variant": "coral" }
+      ],
+      "also_used": [
+        { "text": "React Router", "variant": "default" },
+        { "text": "Prisma", "variant": "default" },
+        { "text": "SASS", "variant": "default" },
+        { "text": "PostgreSQL", "variant": "coral" }
+      ]
+    },
+    "description": "Bar Management System. Order entry, sales and payment processing, menu management, cash register management (opening, closing, and cash movements), and dashboard with sales metrics. Role-based access control (RBAC) and audit trail for financial transactions.",
+    "full_description": [
+      [
+        "Overview",
+        "Bar Management System for order taking at the table, product registration and filtering, and sales tracking, with revenue reporting by date range and payment method."
+      ],
+      [
+        "Design",
+        "Problem analysis, definition of functional and non-functional requirements. Data modeling using Entity-Relationship (ER) diagrams and normalization to Third Normal Form (3NF)."
+      ],
+      [
+        "Development",
+        "Backend built with Java and Spring Boot, using Spring Data JPA and Hibernate for persistence, and Jakarta Validation for data validation. Server-side rendered frontend using Thymeleaf, HTML, CSS, and JavaScript, following a Model-View-Controller (MVC) architecture. MySQL as the relational database."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "sofiatienda",
+    "num": "04",
+    "name": "Sofia Tienda de Ropa",
+    "subtitle": "#",
+    "year": "2024",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "HTML", "variant": "default" },
+        { "text": "CSS", "variant": "default" },
+        { "text": "Bootstrap", "variant": "default" }
+      ],
+      "also_used": [
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "CSS", "variant": "default" },
+        { "text": "Bootstrap", "variant": "default" }
+      ]
+    },
+    "description": "Women's Clothing Store Frontend. Product catalogue, category navigation, login and registration interfaces, and responsive design.",
+    "full_description": [
+      [
+        "Overview",
+        "E-commerce demo for a clothing store, featuring a product catalog with category filtering, and user registration and login forms."
+      ],
+      [
+        "Development",
+        "Built with HTML, CSS, and JavaScript, using Bootstrap for the carousel component, with responsive design. Originally connected to a backend hosted on Heroku; product data is now served from a static JSON file after Heroku discontinued its free tier, since the project is presentational and not intended to be a fully functional store."
+      ]
+    ],
+    "links": {
+      "site": "https://sofifregona.github.io/Sofia-tienda-de-ropa/",
+      "github": "https://github.com/sofifregona/Sofia-tienda-de-ropa"
+    }
+  },
+  {
+    "id": "elvigiahostel",
+    "num": "05",
+    "name": "El Vigía Hostel",
+    "subtitle": "#",
+    "year": "2024",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "CSS", "variant": "default" },
+        { "text": "Bootstrap", "variant": "default" }
+      ],
+      "also_used": [
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "CSS", "variant": "default" },
+        { "text": "Bootstrap", "variant": "default" }
+      ]
+    },
+    "description": "Motor de checkout e-commerce con bloqueo de inventario en tiempo real, payment intents de Stripe, manejo de webhooks y una máquina de estados de pedido prolija.",
+    "full_description": [
+      [
+        "Overview",
+        "Institutional website for a hostel, presenting general information about the property, facilities, and services, with a dedicated contact section."
+      ],
+      [
+        "Development",
+        "Built with HTML, CSS, and JavaScript, with responsive design."
+      ]
+    ],
+    "links": {
+      "site": "https://sofifregona.github.io/ElVigia/",
+      "github": "https://github.com/sofifregona/ElVigia"
+    }
+  }
+]
