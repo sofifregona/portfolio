@@ -142,7 +142,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#contact" class="nav-cta">Contact</a></li>
-          <li>
+          <!-- <li>
             <button
               id="theme-toggle"
               class="theme-toggle"
@@ -165,8 +165,74 @@
               ><span aria-hidden="true">·</span><a href="/it/">IT</a
               ><span aria-hidden="true">·</span><a href="/es/">ES</a>
             </div>
-          </li>
+          </li> -->
         </ul>
+        <div class="nav-controls">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Change theme"
+            aria-pressed="false"
+          >
+            <span class="material-symbols-rounded icon-sun">light_mode</span>
+            <span class="material-symbols-rounded icon-moon">dark_mode</span>
+          </button>
+
+          <div class="lang-switch" aria-label="Language selector">
+            <a href="/" class="lang-active">EN</a
+            ><span aria-hidden="true">·</span><a href="/it/">IT</a
+            ><span aria-hidden="true">·</span><a href="/es/">ES</a>
+          </div>
+        </div>
+
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-menu-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <button
+          id="mobile-theme-toggle"
+          class="mobile-theme-row"
+          type="button"
+          aria-pressed="false"
+        >
+          <span class="mobile-theme-icon">
+            <span class="material-symbols-rounded icon-sun">light_mode</span>
+            <span class="material-symbols-rounded icon-moon">dark_mode</span>
+          </span>
+          <span class="mobile-theme-label">
+            <span class="label-sun">Light mode</span>
+            <span class="label-moon">Dark mode</span>
+          </span>
+        </button>
+
+        <div class="mobile-menu-divider"></div>
+
+        <div class="mobile-lang-switch" aria-label="Language selector">
+          <a href="/" class="lang-active">EN</a><span aria-hidden="true">·</span
+          ><a href="/it/">IT</a><span aria-hidden="true">·</span
+          ><a href="/es/">ES</a>
+        </div>
       </div>
     </nav>
 
@@ -414,12 +480,12 @@
                   d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
                 />
                 <polyline points="22,6 12,13 2,6" /></svg
-              >alex@example.com</a
+              >sofi.fregona@gmail.com</a
             >
           </div>
 
           <div class="contact-right reveal reveal-delay-1">
-            <a href="#" class="contact-item">
+            <a href="https://github.com/sofifregona" class="contact-item">
               <div class="contact-item-icon" aria-hidden="true">
                 <svg
                   width="17"
@@ -438,7 +504,7 @@
               </div>
               <div>
                 <p class="contact-item-label">GitHub</p>
-                <p class="contact-item-value">github.com/alexmoretti</p>
+                <p class="contact-item-value">github.com/sofifregona</p>
               </div>
             </a>
 

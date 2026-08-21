@@ -21,14 +21,9 @@
         { "text": "PostgreSQL", "variant": "coral" },
         { "text": "API Rest", "variant": "coral" }
       ],
-      "also_used": [
-        { "text": "React Router", "variant": "default" },
-        { "text": "Prisma", "variant": "default" },
-        { "text": "SASS", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" }
-      ]
+      "also_used": ["React Router", "Prisma", "SASS", "Recharts", "HTML5"]
     },
-    "description": "Eyeglass Management System. Patient and prescription registration, automatic optical transposition, eyeglass fabrication status tracking, pickup scheduling, and stock control. Dashboard with historical metrics. Role-based access control (RBAC) and sensitive data traceability.",
+    "description": "Eyeglass management system for patient and prescription registration, lens fabrication tracking, and stock control, with a dashboard for historical metrics and role-based access with full traceability over sensitive health data.",
     "full_description": [
       [
         "Overview",
@@ -39,12 +34,8 @@
         "Decoupled client-server architecture: a layered backend (Controller-Service-Repository) built with Prisma, including a dedicated mapping layer that transforms entities into DTOs before exposing them, plus cross-cutting middleware for role-based authorization and centralized error handling. On the frontend, React Router drives data fetching and mutations via loaders and actions, backed by a dedicated API layer for external calls."
       ],
       [
-        "Security & Compliance",
+        "Security",
         "Role-based authentication and authorization, following the Principle of Least Privilege, with encryption of sensitive health data and an audit trail for tracking access to patient records, in compliance with national healthcare regulations."
-      ],
-      [
-        "Development",
-        "Frontend built with React Router and TypeScript, styled with Sass and visualized with Recharts. Backend built with Express, with RESTful APIs and a PostgreSQL database designed using Prisma."
       ]
     ],
     "links": {
@@ -70,33 +61,25 @@
         { "text": "React", "variant": "default" },
         { "text": "TypeScript", "variant": "default" },
         { "text": "Node.js", "variant": "default" },
+        { "text": "Express", "variant": "default" },
         { "text": "PostgreSQL", "variant": "coral" },
-        { "text": "TypeORM", "variant": "coral" }
+        { "text": "REST API", "variant": "coral" }
       ],
-      "also_used": [
-        { "text": "React Router", "variant": "default" },
-        { "text": "Prisma", "variant": "default" },
-        { "text": "SASS", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" }
-      ]
+      "also_used": ["React Router", "TypeORM", "SASS", "Recharts", "HTML5"]
     },
-    "description": "Bar Management System. Order entry, sales and payment processing, menu management, cash register management (opening, closing, and cash movements), and dashboard with sales metrics. Role-based access control (RBAC) and audit trail for financial transactions.",
+    "description": "Bar management system for order entry, sales, and payment processing, along with cash register control, stock, product, and provider management. Includes a dashboard for sales metrics and role-based access with full traceability over financial transactions.",
     "full_description": [
       [
         "Overview",
-        "Bar Management System for order entry, sales and payment processing, and menu management. Cash register management, including opening, closing, and cash movements, along with stock control, provider management, and account records associated with each payment method. Dashboard with sales metrics, a notification system, and an alerting system for operational inconsistencies. Mobile-first responsive design, built around staff taking orders directly from their phones at the table."
-      ],
-      [
-        "Security & Traceability",
-        "Role-based access control (RBAC) authentication and authorization system, following the Principle of Least Privilege (PoLP). Audit trail for financial transactions."
+        "Bar Management System for order entry, sales and payment processing. Cash register control (opening, closing, and cash movements) works alongside stock, product, and provider management, along with account records. A dashboard with sales metrics, plus a notification and alerting system for operational inconsistencies. The whole system follows a responsive design, built around staff taking orders directly from their phones at the table."
       ],
       [
         "Architecture",
-        "Migration from a server-side rendered MVC architecture to a decoupled client-server architecture, with a layered backend (Controller-Service-Repository pattern)."
+        "Migrated from a server-side rendered MVC architecture to a decoupled client-server architecture, with a layered backend (Controller-Service-Repository) and a PostgreSQL database managed through TypeORM, plus cross-cutting middleware for role-based authorization and centralized error handling. On the frontend, React Router drives data fetching and mutations via loaders and actions."
       ],
       [
-        "Development",
-        "Built with a React Router and TypeScript frontend, styled with Sass and visualized with Recharts. Express backend with RESTful APIs, and a PostgreSQL database designed using TypeORM."
+        "Security & Traceability",
+        "Role-based authentication and authorization, following the Principle of Least Privilege, with an audit trail for tracking financial transactions."
       ]
     ],
     "links": {
@@ -105,9 +88,9 @@
     }
   },
   {
-    "id": "megamanager",
+    "id": "salesmanager",
     "num": "03",
-    "name": "MEGA Manager",
+    "name": "Sales Manager",
     "subtitle": "#",
     "year": "2023",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
@@ -119,18 +102,13 @@
     ],
     "tags": {
       "core_stack": [
-        { "text": "React", "variant": "default" },
-        { "text": "TypeScript", "variant": "default" },
-        { "text": "Node.js", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" },
-        { "text": "TypeORM", "variant": "coral" }
+        { "text": "Java", "variant": "default" },
+        { "text": "Spring Boot", "variant": "default" },
+        { "text": "Thymeleaf", "variant": "default" },
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "MySQL", "variant": "coral" }
       ],
-      "also_used": [
-        { "text": "React Router", "variant": "default" },
-        { "text": "Prisma", "variant": "default" },
-        { "text": "SASS", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" }
-      ]
+      "also_used": ["Hibernate/JPA", "CSS3", "HTML5"]
     },
     "description": "Bar Management System. Order entry, sales and payment processing, menu management, cash register management (opening, closing, and cash movements), and dashboard with sales metrics. Role-based access control (RBAC) and audit trail for financial transactions.",
     "full_description": [
@@ -149,7 +127,7 @@
     ],
     "links": {
       "site": "#",
-      "github": "#"
+      "github": "https://github.com/sofifregona/sales_manager"
     }
   },
   {
@@ -167,9 +145,10 @@
     ],
     "tags": {
       "core_stack": [
-        { "text": "HTML", "variant": "default" },
-        { "text": "CSS", "variant": "default" },
-        { "text": "Bootstrap", "variant": "default" }
+        { "text": "HTML5", "variant": "default" },
+        { "text": "CSS3", "variant": "default" },
+        { "text": "Bootstrap", "variant": "default" },
+        { "text": "JSON", "variant": "coral" }
       ],
       "also_used": [
         { "text": "JavaScript", "variant": "default" },

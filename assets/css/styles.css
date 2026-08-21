@@ -1,6 +1,6 @@
 /* ============================================================
    PORTFOLIO — styles.css
-   Fuentes: Cormorant (headings) + Inter (cuerpo)
+   Fuentes: Cormorant (headings) + Inter (cuerpo) + Noto Serif (logo)
    Paleta: negro / violeta ciruela / dorado cálido / neutro frío
    ============================================================ */
 
@@ -16,6 +16,7 @@
   --text: #ede9f4;
   --text-muted: #7c7990;
   --text-dim: #3e3c4a;
+  --text-m-d: #7c7990;
   --amber: #9b5de5;
   --amber-hover: #b07eed;
   --amber-glow: rgba(155, 93, 229, 0.2);
@@ -28,6 +29,7 @@
   --amber-rgb: 155, 93, 229;
   --coral-rgb: 224, 179, 65;
   --shadow-strong: rgba(0, 0, 0, 0.6);
+  --brightness: 120%;
   --radius-sm: 5px;
   --radius-md: 12px;
   --radius-lg: 24px;
@@ -38,7 +40,7 @@
 }
 
 /* ── Tema claro ───────────────────────────────────────────────
-   Paleta tomada de la variante styles__2.css (ámbar/coral cálido).
+   Paleta: ámbar/coral cálido.
    Se activa de dos formas:
    1) Automática: si el sistema del visitante está en modo claro
       (prefers-color-scheme: light) y no hay preferencia manual guardada.
@@ -56,6 +58,7 @@
     --text: #211c14;
     --text-muted: #6b6152;
     --text-dim: #b8ad97;
+    --text-m-d: #b8ad97;
     --amber: #f5a623;
     --amber-hover: #ffc266;
     --amber-glow: rgba(245, 166, 35, 0.18);
@@ -68,6 +71,7 @@
     --amber-rgb: 245, 166, 35;
     --coral-rgb: 232, 68, 90;
     --shadow-strong: rgba(0, 0, 0, 0.12);
+    --brightness: 100%;
   }
 }
 
@@ -80,6 +84,7 @@
   --text: #211c14;
   --text-muted: #6b6152;
   --text-dim: #b8ad97;
+  --text-m-d: #b8ad97;
   --amber: #f5a623;
   --amber-hover: #ffc266;
   --amber-glow: rgba(245, 166, 35, 0.18);
@@ -92,6 +97,7 @@
   --amber-rgb: 245, 166, 35;
   --coral-rgb: 232, 68, 90;
   --shadow-strong: rgba(0, 0, 0, 0.12);
+  --brightness: 100%;
 }
 
 /* Transición suave al cambiar de tema (no molesta si nunca cambia) */
@@ -123,17 +129,9 @@ body {
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
-  /* line-height: 1.65; */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  /* cursor: none; */
 }
-
-/* @media (hover: none) {
-  body {
-    cursor: auto;
-  }
-} */
 
 /* ── Scrollbar ────────────────────────────────────────────── */
 ::-webkit-scrollbar {
@@ -159,45 +157,6 @@ body {
   transition: width 0.08s linear;
   box-shadow: 0 0 8px var(--amber-glow);
 }
-
-/* ── Custom cursor ────────────────────────────────────────── */
-/* #cursor-dot,
-#cursor-ring {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-
-#cursor-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--amber);
-  transition: opacity 0.3s;
-}
-
-#cursor-ring {
-  width: 34px;
-  height: 34px;
-  border: 1.5px solid rgba(var(--amber-rgb), 0.5);
-  transition:
-    width 0.22s var(--ease-out),
-    height 0.22s var(--ease-out),
-    border-color 0.22s,
-    opacity 0.3s;
-}
-
-#cursor-ring.hover {
-  width: 58px;
-  height: 58px;
-  border-color: var(--coral);
-}
-#cursor-ring.click {
-  width: 26px;
-  height: 26px;
-  border-color: var(--amber);
-} */
 
 /* ── Ambient ──────────────────────────────────────────────── */
 body::before {
@@ -225,11 +184,6 @@ body::before {
   margin: 0 auto;
   padding: 0 clamp(1.25rem, 5vw, 3rem);
   position: relative;
-}
-
-section {
-  /* position: relative; */
-  z-index: 1;
 }
 
 /* ── NAV ──────────────────────────────────────────────────── */
@@ -306,6 +260,154 @@ nav.scrolled {
   color: #000 !important;
 }
 
+/* ── Controles de desktop (tema + idioma agrupados) ─────── */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+/* ── Botón hamburguesa ────────────────────────────────────── */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition:
+    transform 0.3s var(--ease-out),
+    opacity 0.2s;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Panel del menú mobile ────────────────────────────────── */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.5rem;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.mobile-menu-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.mobile-menu-links a.nav-cta {
+  color: var(--amber);
+}
+
+.mobile-menu-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 1.1rem 0;
+}
+
+.mobile-theme-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mobile-theme-icon span {
+  font-size: 20px;
+  display: block;
+}
+
+.mobile-theme-icon .icon-moon,
+.mobile-theme-label .label-moon {
+  display: none;
+}
+:root[data-theme="light"] .mobile-theme-icon .icon-sun,
+:root[data-theme="light"] .mobile-theme-label .label-sun {
+  display: none;
+}
+:root[data-theme="light"] .mobile-theme-icon .icon-moon,
+:root[data-theme="light"] .mobile-theme-label .label-moon {
+  display: block;
+}
+
+.mobile-lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.mobile-lang-switch a {
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.mobile-lang-switch a.lang-active {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.mobile-lang-switch span {
+  color: var(--text-dim);
+}
+
+/* ── Breakpoint mobile ────────────────────────────────────── */
+@media (max-width: 900px) {
+  .nav-links,
+  .nav-controls {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 /* ── Selector de idioma ───────────────────────────────────── */
 .lang-switch {
   display: flex;
@@ -334,14 +436,14 @@ nav.scrolled {
   color: var(--text-dim);
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .lang-switch {
     position: fixed;
     top: 1.25rem;
     right: 1.25rem;
     z-index: 150;
   }
-}
+} */
 
 /* ── Toggle de tema claro/oscuro ──────────────────────────── */
 .theme-toggle {
@@ -354,7 +456,6 @@ nav.scrolled {
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text-muted);
-  /* cursor: none; */
   padding: 0;
   transition:
     border-color 0.2s,
@@ -383,14 +484,14 @@ nav.scrolled {
   display: block;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .theme-toggle {
     position: fixed;
     top: 1.25rem;
     left: 1.25rem;
     z-index: 150;
   }
-}
+} */
 
 /* ── HERO ─────────────────────────────────────────────────── */
 #hero {
@@ -461,25 +562,6 @@ nav.scrolled {
   animation: slideUp 0.85s var(--ease-out) forwards;
 }
 
-/* .hero-title-line:nth-child(1) .hero-title-inner {
-  animation-delay: 0.35s;
-}
-.hero-title-line:nth-child(2) .hero-title-inner {
-  animation-delay: 0.52s;
-}
-.hero-title-line:nth-child(3) .hero-title-inner {
-  animation-delay: 0.68s;
-} */
-
-/* .hero-title .italic {
-  font-style: italic;
-  color: var(--text-muted);
-}
-.hero-title .outline {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--text);
-} */
-
 .hero-sub-row {
   display: flex;
   justify-content: space-between;
@@ -514,7 +596,6 @@ nav.scrolled {
 }
 
 .hero-scroll {
-  /* position: fixed; */
   right: 1.75rem;
   top: 50%;
   transform: translateY(-50%);
@@ -583,7 +664,7 @@ nav.scrolled {
   stroke-dasharray: 679;
   stroke-dashoffset: 679;
   animation: drawCircle 2s var(--ease-out) forwards;
-  animation-delay: 2.35s; /* arranca justo cuando termina el slideUp de la foto */
+  animation-delay: 2.35s;
 }
 
 @keyframes drawCircle {
@@ -600,9 +681,9 @@ nav.scrolled {
   object-fit: cover;
   display: block;
   transform: translateY(110%);
+  filter: grayscale(100%) brightness(var(--brightness));
   animation: slideUp 1.5s var(--ease-out) forwards;
   animation-delay: 0.85s;
-  filter: grayscale(100%) brightness(120%);
   transition: filter 0.3s;
 }
 
@@ -801,7 +882,7 @@ nav.scrolled {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.22rem 0.6rem;
-  border-radius: 100px;
+  border-radius: 5px;
   background: rgba(var(--amber-rgb), 0.1);
   color: var(--amber);
   border: 1px solid rgba(var(--amber-rgb), 0.2);
@@ -867,6 +948,23 @@ nav.scrolled {
 }
 .project-link.primary {
   color: var(--amber);
+}
+
+.project-more-btn {
+  color: var(--amber);
+  font-family: var(--font-body);
+  background: transparent;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(var(--amber-rgb), 0.4);
+  padding: 0.3rem 0.75rem;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.project-more-btn:hover {
+  background: var(--amber);
+  color: #000;
 }
 
 /* ── ABOUT / SKILLS ──────────────────────────────────────── */
@@ -944,7 +1042,6 @@ nav.scrolled {
     border-color 0.2s,
     color 0.2s,
     background 0.2s;
-  /* cursor: default; */
 }
 
 .skill-pill:hover {
@@ -1210,7 +1307,7 @@ footer {
   box-shadow: 0 30px 80px var(--shadow-strong);
   max-width: 960px;
   width: 100%;
-  height: min(88vh, 560px);
+  height: min(88vh, 510px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1229,33 +1326,16 @@ footer {
 
 .project-modal-columns {
   flex: 1;
-  min-height: 0; /* nuevo — clave para que la altura se propague */
+  min-height: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
 }
 
-/* Orden por defecto: imagen izquierda, texto derecha */
-.project-modal-media {
-  order: 1;
-}
-.project-modal-text {
-  order: 2;
-}
-
-/* Flip: imagen derecha, texto izquierda (proyectos "pares") */
-.project-modal-columns.flip .project-modal-media {
-  order: 2;
-}
-.project-modal-columns.flip .project-modal-text {
-  order: 1;
-}
-
 .project-modal-media {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* faltaba esta línea */
   gap: 1.25rem;
 }
 
@@ -1348,9 +1428,24 @@ footer {
 
 /* Stack (tags), ahora debajo de la imagen */
 .project-modal-tags {
+  padding: 0.4rem 0;
+}
+
+.project-modal-tags-core-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
+}
+
+.project-modal-tags-also-used {
+  margin-top: 1.5rem;
+}
+
+.also-used-text {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--text-m-d);
 }
 
 .project-modal-name {

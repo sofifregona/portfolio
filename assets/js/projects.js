@@ -60,9 +60,9 @@ function buildProjectCard(p, index) {
         <div class="project-footer">
           <span class="project-year">${p.year}</span>
           <div class="project-links">
-          <button type="button" class="project-link project-more-btn" data-index="${index}">Ver más</button>
-            ${p.links.site !== "#" ? `<a href="${p.links.demo}" class="project-link primary">Demo</a>` : ""}
-            ${p.links.github !== "#" ? `<a href="${p.links.github}" class="project-link">GitHub</a>` : ""}
+          ${p.links.site !== "#" ? `<a href="${p.links.demo}" class="project-link">Demo</a>` : ""}
+          ${p.links.github !== "#" ? `<a href="${p.links.github}" class="project-link">GitHub</a>` : ""}
+            <button type="button" class="project-link project-more-btn" data-index="${index}">See more</button>
           </div>
         </div>
       </div>

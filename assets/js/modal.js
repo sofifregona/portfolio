@@ -22,10 +22,10 @@ function ensureModalDOM() {
             <button type="button" class="project-modal-carousel-btn next" aria-label="Siguiente">›</button>
             <div class="project-modal-carousel-dots"></div>
           </div>
-          <p class="project-modal-tags-title">Core stack</p>
-          <div class="project-modal-tags-core-stack"></div>
-          <p class="project-modal-tags-title">Also used</p>
-          <div class="project-modal-tags-also-used"></div>
+          <div class="project-modal-tags">
+            <div class="project-modal-tags-core-stack"></div>
+            <div class="project-modal-tags-also-used"></div>
+          </div>
         </div>
         <div class="project-modal-text">
           <p class="project-modal-year"></p>
@@ -112,12 +112,9 @@ function openProjectModal(project, index, originEl) {
       )
       .join("");
   overlay.querySelector(".project-modal-tags-also-used").innerHTML =
-    project.tags.also_used
-      .map(
-        (t) =>
-          `<span class="tag${t.variant === "coral" ? " coral" : ""}">${t.text}</span>`,
-      )
-      .join("");
+    `<p class="also-used-text"> Also used: ${project.tags.also_used
+      .map((t) => t)
+      .join(" · ")}</p>`;
   overlay.querySelector(".project-modal-name").textContent = project.name;
   overlay.querySelector(".project-modal-year").textContent = project.year;
   const desc = overlay.querySelector(".project-modal-desc");
