@@ -116,7 +116,8 @@ function openProjectModal(project, index, originEl) {
       .map((t) => t)
       .join(" · ")}</p>`;
   overlay.querySelector(".project-modal-name").textContent = project.name;
-  overlay.querySelector(".project-modal-year").textContent = project.year;
+  overlay.querySelector(".project-modal-year").textContent =
+    project.year + (project.subtitle !== "#" ? ` · ${project.subtitle}` : "");
   const desc = overlay.querySelector(".project-modal-desc");
   desc.innerHTML = ""; // nuevo: limpiar antes de llenar
 

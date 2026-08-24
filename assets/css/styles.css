@@ -939,8 +939,9 @@ body.menu-open {
   font-size: 0.78rem;
   font-weight: 500;
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--text-dim);
   transition: color 0.2s;
+  font-family: var(--font-body);
 }
 
 .project-link:hover {
@@ -948,6 +949,9 @@ body.menu-open {
 }
 .project-link.primary {
   color: var(--amber);
+  background: none;
+  border: none;
+  font-weight: 500;
 }
 
 .project-more-btn {
@@ -1307,7 +1311,8 @@ footer {
   box-shadow: 0 30px 80px var(--shadow-strong);
   max-width: 960px;
   width: 100%;
-  height: min(88vh, 510px);
+  height: auto;
+  max-height: 520px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1350,8 +1355,7 @@ footer {
   color: var(--amber);
   font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.08rem;
 }
 
 /* Carrusel, ahora contenido dentro de la columna, no full-width */
@@ -1454,6 +1458,7 @@ footer {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.9rem;
+  margin-top: 0.3rem;
 }
 
 .project-modal-desc-wrap {
@@ -1466,7 +1471,7 @@ footer {
   height: 100%;
   overflow-y: auto;
   padding-right: 1.25rem;
-  padding-top: 1.25rem; /* 1) separación respecto del título */
+  padding-top: 1rem;
 }
 
 .project-modal-desc-title,

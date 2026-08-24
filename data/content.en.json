@@ -5,12 +5,10 @@
     "name": "Oftalmo LENS",
     "subtitle": "#",
     "year": "2026",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+    "image": "assets/img/projects/oftalmo_lens/oftalmo_lens_1.jpg",
     "images": [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+      "assets/img/projects/oftalmo_lens/oftalmo_lens_2.jpg",
+      "assets/img/projects/oftalmo_lens/oftalmo_lens_3.jpg"
     ],
     "tags": {
       "core_stack": [
@@ -18,10 +16,10 @@
         { "text": "TypeScript", "variant": "default" },
         { "text": "Node.js", "variant": "default" },
         { "text": "Express", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" },
-        { "text": "API Rest", "variant": "coral" }
+        { "text": "REST API", "variant": "coral" },
+        { "text": "PostgreSQL", "variant": "coral" }
       ],
-      "also_used": ["React Router", "Prisma", "SASS", "Recharts", "HTML5"]
+      "also_used": ["React Router", "Prisma", "Recharts", "SASS", "HTML5"]
     },
     "description": "Eyeglass management system for patient and prescription registration, lens fabrication tracking, and stock control, with a dashboard for historical metrics and role-based access with full traceability over sensitive health data.",
     "full_description": [
@@ -47,7 +45,7 @@
     "id": "migration_megamanager",
     "num": "02",
     "name": "MEGA Manager",
-    "subtitle": "Migration, refactoring, and evolutionary maintenance.",
+    "subtitle": "#",
     "year": "2025",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
     "images": [
@@ -62,10 +60,10 @@
         { "text": "TypeScript", "variant": "default" },
         { "text": "Node.js", "variant": "default" },
         { "text": "Express", "variant": "default" },
-        { "text": "PostgreSQL", "variant": "coral" },
-        { "text": "REST API", "variant": "coral" }
+        { "text": "REST API", "variant": "coral" },
+        { "text": "PostgreSQL", "variant": "coral" }
       ],
-      "also_used": ["React Router", "TypeORM", "SASS", "Recharts", "HTML5"]
+      "also_used": ["React Router", "TypeORM", "Recharts", "SASS", "HTML5"]
     },
     "description": "Bar management system for order entry, sales, and payment processing, along with cash register control, stock, product, and provider management. Includes a dashboard for sales metrics and role-based access with full traceability over financial transactions.",
     "full_description": [
@@ -105,24 +103,20 @@
         { "text": "Java", "variant": "default" },
         { "text": "Spring Boot", "variant": "default" },
         { "text": "Thymeleaf", "variant": "default" },
-        { "text": "JavaScript", "variant": "default" },
+        { "text": "Hibernate / JPA", "variant": "coral" },
         { "text": "MySQL", "variant": "coral" }
       ],
-      "also_used": ["Hibernate/JPA", "CSS3", "HTML5"]
+      "also_used": ["JavaScript", "Jakarta Validation", "CSS3", "HTML5"]
     },
-    "description": "Bar Management System. Order entry, sales and payment processing, menu management, cash register management (opening, closing, and cash movements), and dashboard with sales metrics. Role-based access control (RBAC) and audit trail for financial transactions.",
+    "description": "Sales management system for a bar, covering order and sale registration, product administration, and sales summaries by revenue or by units sold.",
     "full_description": [
       [
         "Overview",
-        "Bar Management System for order taking at the table, product registration and filtering, and sales tracking, with revenue reporting by date range and payment method."
+        "Sales Management System for a bar, allowing staff to register orders and sales, manage products, and view sales summaries by revenue or units sold, filtered by a custom date range. Includes a real-time filter for product selection when taking orders."
       ],
       [
-        "Design",
-        "Problem analysis, definition of functional and non-functional requirements. Data modeling using Entity-Relationship (ER) diagrams and normalization to Third Normal Form (3NF)."
-      ],
-      [
-        "Development",
-        "Backend built with Java and Spring Boot, using Spring Data JPA and Hibernate for persistence, and Jakarta Validation for data validation. Server-side rendered frontend using Thymeleaf, HTML, CSS, and JavaScript, following a Model-View-Controller (MVC) architecture. MySQL as the relational database."
+        "Architecture",
+        "Server-side rendered MVC architecture, with routing handled through Spring Web MVC and Hibernate/JPA managing data persistence. Jakarta Validation enforces data integrity at the form level, and navigation and page transitions are driven by redirects."
       ]
     ],
     "links": {
@@ -134,7 +128,7 @@
     "id": "sofiatienda",
     "num": "04",
     "name": "Sofia Tienda de Ropa",
-    "subtitle": "#",
+    "subtitle": "Academic Project",
     "year": "2024",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
     "images": [
@@ -145,25 +139,21 @@
     ],
     "tags": {
       "core_stack": [
-        { "text": "HTML5", "variant": "default" },
-        { "text": "CSS3", "variant": "default" },
-        { "text": "Bootstrap", "variant": "default" },
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "Json-Server", "variant": "default" },
+        { "text": "REST API", "variant": "coral" },
         { "text": "JSON", "variant": "coral" }
       ],
-      "also_used": [
-        { "text": "JavaScript", "variant": "default" },
-        { "text": "CSS", "variant": "default" },
-        { "text": "Bootstrap", "variant": "default" }
-      ]
+      "also_used": ["Heroku", "Bootstrap", "CSS3", "HTML5"]
     },
     "description": "Women's Clothing Store Frontend. Product catalogue, category navigation, login and registration interfaces, and responsive design.",
     "full_description": [
       [
         "Overview",
-        "E-commerce demo for a clothing store, featuring a product catalog with category filtering, and user registration and login forms."
+        "Women's Clothing Store frontend, featuring a product catalogue with category filtering, individual product detail pages, and responsive layout across devices."
       ],
       [
-        "Development",
+        "Architecture",
         "Built with HTML, CSS, and JavaScript, using Bootstrap for the carousel component, with responsive design. Originally connected to a backend hosted on Heroku; product data is now served from a static JSON file after Heroku discontinued its free tier, since the project is presentational and not intended to be a fully functional store."
       ]
     ],
@@ -176,7 +166,7 @@
     "id": "elvigiahostel",
     "num": "05",
     "name": "El Vigía Hostel",
-    "subtitle": "#",
+    "subtitle": "Academic Project",
     "year": "2024",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
     "images": [

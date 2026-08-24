@@ -58,7 +58,7 @@ function buildProjectCard(p, index) {
           </div>
         <div class="project-tags">${tagsHTML}</div>
         <div class="project-footer">
-          <span class="project-year">${p.year}</span>
+          <span class="project-year">${p.year}${p.subtitle !== "#" ? ` · ${p.subtitle}` : ""}</span>
           <div class="project-links">
           ${p.links.site !== "#" ? `<a href="${p.links.demo}" class="project-link">Demo</a>` : ""}
           ${p.links.github !== "#" ? `<a href="${p.links.github}" class="project-link">GitHub</a>` : ""}
