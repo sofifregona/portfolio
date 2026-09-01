@@ -2,6 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("langChoice");
+          if (saved) {
+            if (saved !== "en") window.location.replace("/" + saved + "/");
+            return;
+          }
+          var lang = (navigator.language || "en").slice(0, 2).toLowerCase();
+          if (lang === "it") {
+            window.location.replace("/it/");
+          } else if (lang === "es") {
+            window.location.replace("/es/");
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"

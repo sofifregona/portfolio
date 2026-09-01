@@ -82,3 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
     closeMenu();
   });
 });
+
+// Registrar idioma de preferencia
+document
+  .querySelectorAll(".lang-switch a, .mobile-lang-switch a")
+  .forEach((link) => {
+    link.addEventListener("click", () => {
+      try {
+        localStorage.setItem(
+          "langChoice",
+          link.textContent.trim().toLowerCase(),
+        );
+      } catch (e) {}
+    });
+  });
