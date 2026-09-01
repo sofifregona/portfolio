@@ -1082,7 +1082,7 @@ body.menu-open {
 
 .project-card:hover .project-carousel-slide-bg {
   filter: brightness(0.96) saturate(1.05);
-  will-change: filter;
+  will-change: transform, filter;
 }
 
 .project-carousel-btn {
