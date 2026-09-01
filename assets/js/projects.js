@@ -124,6 +124,33 @@ function preloadCarouselImages() {
   });
 }
 
+function warmUpCarouselLayers() {
+  document.querySelectorAll(".project-carousel-track").forEach((track) => {
+    const len = track.children.length;
+    if (len <= 1) return;
+
+    track.style.transition = "none";
+    let i = 1;
+
+    function step() {
+      track.style.transform = `translateX(-${i * 100}%)`;
+      i++;
+      if (i < len) {
+        requestAnimationFrame(step);
+      } else {
+        requestAnimationFrame(() => {
+          track.style.transform = "translateX(0%)";
+          requestAnimationFrame(() => {
+            track.style.transition = "";
+          });
+        });
+      }
+    }
+
+    requestAnimationFrame(step);
+  });
+}
+
 async function renderProjects() {
   const container = document.querySelector(".projects-list");
   const lang = getLangFromPath();
@@ -149,6 +176,7 @@ async function renderProjects() {
     initProjectParallax();
     fixCardPhotoHeights();
     preloadCarouselImages(); // NUEVA
+    warmUpCarouselLayers();
   } catch (err) {
     console.error("Error loading projects:", err);
     container.innerHTML =
