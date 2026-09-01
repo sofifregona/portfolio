@@ -133,12 +133,12 @@
     "name": "Sofia — Tienda de ropa",
     "subtitle": "Academic Project",
     "year": "2023",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "image": "assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
     "images": [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+      "assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
+      "assets/img/projects/sofia_tienda/sofia_tienda_2.jpg",
+      "assets/img/projects/sofia_tienda/sofia_tienda_3.jpg",
+      "assets/img/projects/sofia_tienda/sofia_tienda_4.jpg"
     ],
     "tags": {
       "core_stack": [

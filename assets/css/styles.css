@@ -313,7 +313,7 @@ nav.scrolled {
   gap: 0.25rem;
   padding: 1.5rem;
   background: var(--bg-2);
-  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   position: fixed;
   top: 72px;
   right: 0;
@@ -1080,10 +1080,10 @@ body.menu-open {
   will-change: transform;
 }
 
-.project-card:hover .project-carousel-slide-bg {
+/* .project-card:hover .project-carousel-slide-bg {
   /* filter: brightness(0.96) saturate(1.05);
-  will-change: transform, filter; */
-}
+  will-change: transform, filter; 
+} */
 
 .project-carousel-btn {
   position: absolute;
