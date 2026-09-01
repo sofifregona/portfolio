@@ -133,12 +133,12 @@
     "name": "Sofia — Tienda de ropa",
     "subtitle": "Proyecto Académico",
     "year": "2023",
-    "image": "assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
+    "image": "/assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
     "images": [
-      "assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
-      "assets/img/projects/sofia_tienda/sofia_tienda_2.jpg",
-      "assets/img/projects/sofia_tienda/sofia_tienda_3.jpg",
-      "assets/img/projects/sofia_tienda/sofia_tienda_4.jpg"
+      "/assets/img/projects/sofia_tienda/sofia_tienda_1.jpg",
+      "/assets/img/projects/sofia_tienda/sofia_tienda_2.jpg",
+      "/assets/img/projects/sofia_tienda/sofia_tienda_3.jpg",
+      "/assets/img/projects/sofia_tienda/sofia_tienda_4.jpg"
     ],
     "tags": {
       "core_stack": [
