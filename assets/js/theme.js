@@ -1,14 +1,9 @@
 /* ============================================================
    PORTFOLIO V2 — theme.js
-   Toggle de tema claro/oscuro. El data-theme inicial ya se
-   setea en un script inline en el <head> (para evitar parpadeo);
-   acá solo manejamos el click y el guardado de preferencia.
-   ============================================================ */
-
-/* ============================================================
-   PORTFOLIO V2 — theme.js
-   Toggle de tema claro/oscuro (2 botones: desktop + mobile) y
-   apertura/cierre del menú hamburguesa en mobile.
+   Toggle de tema claro/oscuro (2 botones: desktop + mobile),
+   con guardado de preferencia, y apertura/cierre del menú
+   hamburguesa en mobile. El data-theme inicial ya se setea en
+   un script inline en el <head> (para evitar parpadeo).
    ============================================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -37,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       localStorage.setItem("theme", next);
     } catch (e) {
-      /* Safari privado, etc */
+      /* Si falla (Safari privado, cookies bloqueadas, etc.), el tema
+      simplemente no persiste entre visitas — no rompe nada más */
     }
     syncThemeButtons();
   }
@@ -78,27 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });
+
+  // Cerrar al tocar afuera del menú
+  document.addEventListener("click", (e) => {
+    if (!mobileMenu.classList.contains("open")) return;
+    if (mobileMenu.contains(e.target) || menuToggle.contains(e.target)) return;
+    closeMenu();
+  });
 });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const btn = document.getElementById('theme-toggle');
-//   if (!btn) return;
-
-//   function currentTheme() {
-//     return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-//   }
-
-//   function syncButton() {
-//     const isLight = currentTheme() === 'light';
-//     btn.setAttribute('aria-pressed', String(isLight));
-//   }
-
-//   btn.addEventListener('click', () => {
-//     const next = currentTheme() === 'light' ? 'dark' : 'light';
-//     document.documentElement.setAttribute('data-theme', next);
-//     try { localStorage.setItem('theme', next); } catch (e) { /* Safari privado, etc */ }
-//     syncButton();
-//   });
-
-//   syncButton();
-// });

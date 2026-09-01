@@ -7,6 +7,7 @@
     "year": "2026",
     "image": "assets/img/projects/oftalmo_lens/oftalmo_lens_1.jpg",
     "images": [
+      "assets/img/projects/oftalmo_lens/oftalmo_lens_1.jpg",
       "assets/img/projects/oftalmo_lens/oftalmo_lens_2.jpg",
       "assets/img/projects/oftalmo_lens/oftalmo_lens_3.jpg"
     ],
@@ -47,12 +48,14 @@
     "name": "MEGA Manager",
     "subtitle": "#",
     "year": "2025",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "image": "assets/img/projects/mega_manager/mega_manager_1.jpg",
     "images": [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+      "assets/img/projects/mega_manager/mega_manager_1.jpg",
+      "assets/img/projects/mega_manager/mega_manager_2.jpg",
+      "assets/img/projects/mega_manager/mega_manager_3.jpg",
+      "assets/img/projects/mega_manager/mega_manager_4.jpg",
+      "assets/img/projects/mega_manager/mega_manager_5.jpg",
+      "assets/img/projects/mega_manager/mega_manager_6.jpg"
     ],
     "tags": {
       "core_stack": [
@@ -91,12 +94,12 @@
     "name": "Sales Manager",
     "subtitle": "#",
     "year": "2023",
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "image": "assets/img/projects/sales_manager/sales_manager_1.jpg",
     "images": [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+      "assets/img/projects/sales_manager/sales_manager_1.jpg",
+      "assets/img/projects/sales_manager/sales_manager_2.jpg",
+      "assets/img/projects/sales_manager/sales_manager_3.jpg",
+      "assets/img/projects/sales_manager/sales_manager_4.jpg"
     ],
     "tags": {
       "core_stack": [
@@ -127,7 +130,7 @@
   {
     "id": "sofiatienda",
     "num": "04",
-    "name": "Sofia Tienda de Ropa",
+    "name": "Sofia — Tienda de ropa",
     "subtitle": "Academic Project",
     "year": "2024",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
@@ -146,15 +149,15 @@
       ],
       "also_used": ["Heroku", "Bootstrap", "CSS3", "HTML5"]
     },
-    "description": "Women's Clothing Store Frontend. Product catalogue, category navigation, login and registration interfaces, and responsive design.",
+    "description": "Institutional catalog site for a women's clothing store, with category navigation and a registration form.",
     "full_description": [
       [
         "Overview",
-        "Women's Clothing Store frontend, featuring a product catalogue with category filtering, individual product detail pages, and responsive layout across devices."
+        "Frontend project for a women's clothing store, featuring a product catalog with category filtering, individual product detail pages, login and registration interfaces, and responsive design."
       ],
       [
         "Architecture",
-        "Built with HTML, CSS, and JavaScript, using Bootstrap for the carousel component, with responsive design. Originally connected to a backend hosted on Heroku; product data is now served from a static JSON file after Heroku discontinued its free tier, since the project is presentational and not intended to be a fully functional store."
+        "Client-side rendered frontend, with responsive design. Originally connected to a backend hosted on Heroku; product data is now served from a static JSON file after Heroku discontinued its free tier, since the project is presentational and not intended to be a fully functional store."
       ]
     ],
     "links": {
@@ -165,7 +168,7 @@
   {
     "id": "elvigiahostel",
     "num": "05",
-    "name": "El Vigía Hostel",
+    "name": "El Vigía — Hostel",
     "subtitle": "Academic Project",
     "year": "2024",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
@@ -178,24 +181,20 @@
     "tags": {
       "core_stack": [
         { "text": "JavaScript", "variant": "default" },
-        { "text": "CSS", "variant": "default" },
-        { "text": "Bootstrap", "variant": "default" }
+        { "text": "CSS3", "variant": "default" },
+        { "text": "HTML5", "variant": "default" }
       ],
-      "also_used": [
-        { "text": "JavaScript", "variant": "default" },
-        { "text": "CSS", "variant": "default" },
-        { "text": "Bootstrap", "variant": "default" }
-      ]
+      "also_used": []
     },
-    "description": "Motor de checkout e-commerce con bloqueo de inventario en tiempo real, payment intents de Stripe, manejo de webhooks y una máquina de estados de pedido prolija.",
+    "description": "Institutional website for a mountain hostel, presenting its facilities and available outdoor activities.",
     "full_description": [
       [
         "Overview",
-        "Institutional website for a hostel, presenting general information about the property, facilities, and services, with a dedicated contact section."
+        "Frontend project for a mountain hostel, presenting general information about the property, facilities, and services, with a dedicated contact section and with responsive design across devices."
       ],
       [
-        "Development",
-        "Built with HTML, CSS, and JavaScript, with responsive design."
+        "Architecture",
+        "Multi-page site with client-side navigation between static pages. The contact form performs client-side validation with a simulated submission confirmation."
       ]
     ],
     "links": {

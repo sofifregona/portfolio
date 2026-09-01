@@ -34,6 +34,7 @@ function initReveal() {
 }
 
 /* ── Active section highlight en nav ─────────────────────── */
+/* Resalta el link del nav cuya sección está actualmente visible en pantalla */
 function initActiveSection() {
   const sections = document.querySelectorAll("section[id]");
   const links = document.querySelectorAll('.nav-links a[href^="#"]');

@@ -1,0 +1,205 @@
+[
+  {
+    "id": "ofaltmolens",
+    "num": "01",
+    "name": "Oftalmo LENS",
+    "subtitle": "#",
+    "year": "2026",
+    "image": "/assets/img/projects/oftalmo_lens/oftalmo_lens_1.jpg",
+    "images": [
+      "/assets/img/projects/oftalmo_lens/oftalmo_lens_1.jpg",
+      "/assets/img/projects/oftalmo_lens/oftalmo_lens_2.jpg",
+      "/assets/img/projects/oftalmo_lens/oftalmo_lens_3.jpg"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "React", "variant": "default" },
+        { "text": "TypeScript", "variant": "default" },
+        { "text": "Node.js", "variant": "default" },
+        { "text": "Express", "variant": "default" },
+        { "text": "REST API", "variant": "coral" },
+        { "text": "PostgreSQL", "variant": "coral" }
+      ],
+      "also_used": ["React Router", "Prisma", "Recharts", "SASS", "HTML5"]
+    },
+    "description": "Sistema de gestión óptica para el registro de pacientes y recetas, el seguimiento del estado de confección de anteojos y control de stock, con un panel de métricas históricas y acceso basado en roles con trazabilidad completa sobre datos sanitarios sensibles.",
+    "full_description": [
+      [
+        "Resumen",
+        "Sistema de gestión óptica para el registro de pacientes y recetas, con transposición óptica automática, seguimiento del estado de confección de los anteojos, control de stock para armazones y lentes, programación de retiro para las visitas de los pacientes, y un panel con métricas históricas para el análisis de datos."
+      ],
+      [
+        "Arquitectura",
+        "Arquitectura cliente-servidor desacoplada: backend en capas (Controller-Service-Repository) construido con Prisma, con una capa de mapeo dedicada que transforma las entidades en DTOs antes de exponerlas, además de middleware transversal para la autorización basada en roles y el manejo centralizado de errores. Frontend gestionado con React Router para la obtención y modificación de datos mediante loaders y actions, respaldado por una capa de API dedicada para las llamadas externas."
+      ],
+      [
+        "Seguridad",
+        "Autenticación y autorización basadas en roles, siguiendo el Principio de Mínimo Privilegio, con cifrado de datos sanitarios sensibles y un registro de auditoría para rastrear el acceso a las historias clínicas, en cumplimiento con las normativas sanitarias nacionales."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "migration_megamanager",
+    "num": "02",
+    "name": "MEGA Manager",
+    "subtitle": "#",
+    "year": "2025",
+    "image": "/assets/img/projects/mega_manager/mega_manager_1.jpg",
+    "images": [
+      "/assets/img/projects/mega_manager/mega_manager_1.jpg",
+      "/assets/img/projects/mega_manager/mega_manager_2.jpg",
+      "/assets/img/projects/mega_manager/mega_manager_3.jpg",
+      "/assets/img/projects/mega_manager/mega_manager_4.jpg",
+      "/assets/img/projects/mega_manager/mega_manager_5.jpg",
+      "/assets/img/projects/mega_manager/mega_manager_6.jpg"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "React", "variant": "default" },
+        { "text": "TypeScript", "variant": "default" },
+        { "text": "Node.js", "variant": "default" },
+        { "text": "Express", "variant": "default" },
+        { "text": "REST API", "variant": "coral" },
+        { "text": "PostgreSQL", "variant": "coral" }
+      ],
+      "also_used": ["React Router", "TypeORM", "Recharts", "SASS", "HTML5"]
+    },
+    "description": "Sistema de gestión de bar, para la carga de pedidos, ventas y procesamiento de pagos, junto con control de caja y gestión de stock, productos y proveedores. Incluye un panel de métricas de ventas y acceso basado en roles con trazabilidad completa sobre las transacciones financieras.",
+    "full_description": [
+      [
+        "Resumen",
+        "Sistema de gestión de bar para la carga de pedidos, ventas y procesamiento de pagos. Control de caja (apertura, cierre y movimientos de efectivo) funcionando en conjunto con la gestión de stock, productos y proveedores, además de registros contables. Un panel con métricas de ventas, sumado a un sistema de notificaciones y alertas ante inconsistencias operativas. Todo el sistema sigue un diseño responsive, pensado para que el personal tome los pedidos directamente desde el teléfono en la mesa."
+      ],
+      [
+        "Arquitectura",
+        "Migrado de una arquitectura MVC renderizada en el servidor a una arquitectura cliente-servidor desacoplada, con un backend en capas (Controller-Service-Repository) y una base de datos PostgreSQL gestionada mediante TypeORM, además de middleware transversal para la autorización basada en roles y el manejo centralizado de errores. En el frontend, React Router gestiona la obtención y modificación de datos mediante loaders y actions."
+      ],
+      [
+        "Seguridad & Trazabilidad",
+        "Autenticación y autorización basadas en roles, siguiendo el Principio de Mínimo Privilegio, con un registro de auditoría para rastrear las transacciones financieras."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "salesmanager",
+    "num": "03",
+    "name": "Sales Manager",
+    "subtitle": "#",
+    "year": "2023",
+    "image": "/assets/img/projects/sales_manager/sales_manager_1.jpg",
+    "images": [
+      "/assets/img/projects/sales_manager/sales_manager_1.jpg",
+      "/assets/img/projects/sales_manager/sales_manager_2.jpg",
+      "/assets/img/projects/sales_manager/sales_manager_3.jpg",
+      "/assets/img/projects/sales_manager/sales_manager_4.jpg"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "Java", "variant": "default" },
+        { "text": "Spring Boot", "variant": "default" },
+        { "text": "Thymeleaf", "variant": "default" },
+        { "text": "Hibernate / JPA", "variant": "coral" },
+        { "text": "MySQL", "variant": "coral" }
+      ],
+      "also_used": ["JavaScript", "Jakarta Validation", "CSS3", "HTML5"]
+    },
+    "description": "Sistema de gestión de ventas para un bar, que abarca el registro de pedidos y ventas, la administración de productos y los resúmenes de ventas por facturación o por unidades vendidas.",
+    "full_description": [
+      [
+        "Resumen",
+        "Sistema de gestión de ventas para un bar, que permite al personal registrar pedidos y ventas, administrar productos y ver resúmenes de ventas por facturación o unidades vendidas, filtrados por un rango de fechas personalizado. Incluye un filtro en tiempo real para la selección de productos al tomar los pedidos."
+      ],
+      [
+        "Arquitectura",
+        "Arquitectura MVC renderizada en el servidor, con el enrutamiento gestionado mediante Spring Web MVC y Hibernate/JPA a cargo de la persistencia de datos. Jakarta Validation garantiza la integridad de los datos a nivel de formulario, y la navegación y las transiciones entre páginas se manejan mediante redirects."
+      ]
+    ],
+    "links": {
+      "site": "#",
+      "github": "https://github.com/sofifregona/sales_manager"
+    }
+  },
+  {
+    "id": "sofiatienda",
+    "num": "04",
+    "name": "Sofia — Tienda de ropa",
+    "subtitle": "Proyecto Académico",
+    "year": "2024",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "Json-Server", "variant": "default" },
+        { "text": "REST API", "variant": "coral" },
+        { "text": "JSON", "variant": "coral" }
+      ],
+      "also_used": ["Heroku", "Bootstrap", "CSS3", "HTML5"]
+    },
+    "description": "Sitio institucional a modo de catálogo para una tienda de ropa femenina, con navegación por categorías y formulario de registro.",
+    "full_description": [
+      [
+        "Resumen",
+        "Proyecto frontend para una tienda de ropa femenina, con un catálogo de productos filtrable por categoría, páginas de detalle individuales para cada producto, interfaces de inicio de sesión y registro, y diseño responsive."
+      ],
+      [
+        "Arquitectura",
+        "Frontend renderizado del lado del cliente, con diseño responsive. Originalmente conectado a un backend alojado en Heroku; los datos de los productos actualmente se sirven desde un archivo JSON estático luego de que Heroku discontinuara su plan gratuito, ya que el proyecto es de carácter presentacional y no está pensado como una tienda completamente funcional."
+      ]
+    ],
+    "links": {
+      "site": "https://sofifregona.github.io/Sofia-tienda-de-ropa/",
+      "github": "https://github.com/sofifregona/Sofia-tienda-de-ropa"
+    }
+  },
+  {
+    "id": "elvigiahostel",
+    "num": "05",
+    "name": "El Vigía — Hostel",
+    "subtitle": "Proyecto Académico",
+    "year": "2024",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+    ],
+    "tags": {
+      "core_stack": [
+        { "text": "JavaScript", "variant": "default" },
+        { "text": "CSS3", "variant": "default" },
+        { "text": "HTML5", "variant": "default" }
+      ],
+      "also_used": []
+    },
+    "description": "Sitio institucional para un hostel de montaña, que presenta sus instalaciones y las actividades al aire libre disponibles.",
+    "full_description": [
+      [
+        "Resumen",
+        "Proyecto frontend para un hostel de montaña, con información general sobre el establecimiento, sus instalaciones y servicios, una sección de contacto dedicada y diseño responsive para todos los dispositivos."
+      ],
+      [
+        "Arquitectura",
+        "Sitio de varias páginas con navegación del lado del cliente entre páginas estáticas. El formulario de contacto realiza validación del lado del cliente con una confirmación de envío simulada."
+      ]
+    ],
+    "links": {
+      "site": "https://sofifregona.github.io/ElVigia/",
+      "github": "https://github.com/sofifregona/ElVigia"
+    }
+  }
+]
