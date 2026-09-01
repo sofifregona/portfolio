@@ -1058,6 +1058,7 @@ body.menu-open {
   display: flex;
   height: 100%;
   transition: transform 0.4s var(--ease-out);
+  will-change: transform; /* NUEVO */
 }
 
 .project-carousel-slide {
@@ -1076,11 +1077,12 @@ body.menu-open {
   transition:
     transform 0.55s var(--ease-out),
     filter 0.4s;
-  will-change: transform;
+  will-change: transform, filter;
 }
 
 .project-card:hover .project-carousel-slide-bg {
   filter: brightness(0.96) saturate(1.05);
+  will-change: filter;
 }
 
 .project-carousel-btn {
@@ -1769,7 +1771,6 @@ footer {
     flex: none;
     padding: 0;
     gap: 8px;
-    margin-top: 10px;
   }
 
   .project-image {

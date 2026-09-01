@@ -104,6 +104,26 @@ function fixCardPhotoHeights() {
   });
 }
 
+function preloadCarouselImages() {
+  document.querySelectorAll(".project-carousel-slide-bg").forEach((el) => {
+    const match = el.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/);
+    if (!match) {
+      console.log("NO MATCH para:", el.style.backgroundImage);
+      return;
+    }
+    const img = new Image();
+    img.src = match[1];
+    if (img.decode) {
+      img
+        .decode()
+        .then(() => console.log("Decodificada OK:", match[1]))
+        .catch((err) => console.log("FALLÓ decode:", match[1], err));
+    } else {
+      console.log("img.decode no existe en este navegador");
+    }
+  });
+}
+
 async function renderProjects() {
   const container = document.querySelector(".projects-list");
   const lang = getLangFromPath();
@@ -128,6 +148,7 @@ async function renderProjects() {
     initReveal();
     initProjectParallax();
     fixCardPhotoHeights();
+    preloadCarouselImages(); // NUEVA
   } catch (err) {
     console.error("Error loading projects:", err);
     container.innerHTML =

@@ -249,7 +249,7 @@ function toggleProjectCard(card) {
           fullDescEl.scrollTop = 0;
 
           if (isStacked) {
-            const EXTRA_SPACING = infoCompactHeight < 300 ? 110 : 90; // poné acá el valor que quieras
+            const EXTRA_SPACING = infoCompactHeight < 300 ? 120 : 100; // poné acá el valor que quieras
             const alsoUsedHeight = tagsAlsoEl ? tagsAlsoEl.scrollHeight : 0;
             const targetHeight =
               currentImgHeight +
