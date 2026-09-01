@@ -1,6 +1,5 @@
 function getLangFromPath() {
   const path = window.location.pathname;
-
   if (path.startsWith("/it/")) return "it";
   if (path.startsWith("/es/")) return "es";
   return "en"; // default
@@ -110,7 +109,9 @@ async function renderProjects() {
   const lang = getLangFromPath();
 
   try {
-    const res = await fetch("/data/content." + lang + ".json");
+    const res = await fetch(
+      (lang !== "en" ? "../" : "") + "data/content." + lang + ".json",
+    );
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const projects = await res.json();
 
