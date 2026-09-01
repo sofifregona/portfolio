@@ -1070,20 +1070,20 @@ body.menu-open {
 
 .project-carousel-slide-bg {
   position: absolute;
-  /* inset: -8%; */
+  inset: -8%;
   background-size: cover;
   background-position: center;
-  /* filter: brightness(0.8) saturate(0.85); */
+  filter: brightness(0.8) saturate(0.85);
   transition:
     transform 0.55s var(--ease-out),
     filter 0.4s;
   will-change: transform;
 }
 
-/* .project-card:hover .project-carousel-slide-bg {
-  /* filter: brightness(0.96) saturate(1.05);
-  will-change: transform, filter; 
-} */
+.project-card:hover .project-carousel-slide-bg {
+  filter: brightness(0.96) saturate(1.05);
+  will-change: transform, filter;
+}
 
 .project-carousel-btn {
   position: absolute;
