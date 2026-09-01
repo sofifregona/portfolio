@@ -1712,10 +1712,6 @@ footer {
     padding-bottom: 1.75rem;
   }
 
-  .project-card.expanded .project-tags-group {
-    padding: 0;
-  }
-
   .about-grid,
   .exp-grid,
   .contact-inner {

@@ -5,6 +5,12 @@ function getLangFromPath() {
   return "en"; // default
 }
 
+const BTN_LABELS = {
+  en: { more: "See more", less: "See less" },
+  it: { more: "Mostra di più", less: "Mostra meno" },
+  es: { more: "Ver más", less: "Ver menos" },
+};
+
 function buildFullDescHTML(fullDescription) {
   return fullDescription
     .map(
@@ -83,7 +89,7 @@ function buildProjectCard(p, index) {
         <div class="project-links">
         ${p.links.site !== "#" ? `<a href="${p.links.demo}" class="project-link">Demo</a>` : ""}
         ${p.links.github !== "#" ? `<a href="${p.links.github}" class="project-link">GitHub</a>` : ""}
-        <button type="button" class="project-link project-more-btn" data-index="${index}"><span class="btn-text">See more</span></button>
+        <button type="button" class="project-link project-more-btn" data-index="${index}"><span class="btn-text">${BTN_LABELS[getLangFromPath()].more}</span></button>
         </div>
         </div>
         </div>

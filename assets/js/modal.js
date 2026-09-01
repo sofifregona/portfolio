@@ -241,7 +241,7 @@ function toggleProjectCard(card) {
           card.classList.add("expanded");
           if (!isStacked) media.appendChild(tagsGroupEl);
           if (tagsAlsoEl) tagsAlsoEl.style.display = "block";
-          setButtonTextAnimated(btn, "See less");
+          setButtonTextAnimated(btn, BTN_LABELS[getLangFromPath()].less);
           startCardAutoplay(card);
 
           descEl.style.display = "none";
@@ -290,7 +290,7 @@ function toggleProjectCard(card) {
           );
         }, 300);
       } else {
-        setButtonTextAnimated(btn, "See more");
+        setButtonTextAnimated(btn, BTN_LABELS[getLangFromPath()].more);
         fullDescWrap.style.opacity = "0";
         tagsGroupEl.style.opacity = "0";
         descEl.style.opacity = "0";
