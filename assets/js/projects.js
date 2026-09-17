@@ -87,7 +87,7 @@ function buildProjectCard(p, index) {
         <div class="project-footer">
         <span class="project-year">${yearText}</span>
         <div class="project-links">
-        ${p.links.site !== "#" ? `<a href="${p.links.demo}" class="project-link">Demo</a>` : ""}
+        ${p.links.site !== "#" ? `<a href="${p.links.site}" class="project-link">Demo</a>` : ""}
         ${p.links.github !== "#" ? `<a href="${p.links.github}" class="project-link">GitHub</a>` : ""}
         <button type="button" class="project-link project-more-btn" data-index="${index}"><span class="btn-text">${BTN_LABELS[getLangFromPath()].more}</span></button>
         </div>
